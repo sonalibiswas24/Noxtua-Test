@@ -1,4 +1,4 @@
-name: E2E Tests
+name: Verify: Run E2E Tests
 
 on:
   pull_request:
@@ -7,7 +7,8 @@ on:
     branches: [ main, master ]
 
 jobs:
-  test:
+  verify:
+    name: Verify E2E Test Suite
     runs-on: ubuntu-latest
     
     steps:
@@ -23,8 +24,8 @@ jobs:
     - name: Install dependencies
       run: npm ci
       
-    - name: Run Cypress tests
-      uses: cypress-io/github-action@v6
+    - name: Verify: Run Cypress tests
+      uses: cypress-io/github-action@6
       with:
         browser: chrome
         record: false
