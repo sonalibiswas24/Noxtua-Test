@@ -96,19 +96,36 @@ The GitHub Actions workflow:
 
 ## AI Tools Usage
 
- I used Cursor AI tool strategically to enhance my development process in the following areas:
+I used Cursor AI features strategically to make debugging and fixing the test failures much more efficient:
 
-1. **Test Plan Enhancement**: While I created the initial test plan, I used AI to suggest additional edge cases and accessibility considerations that I might have overlooked, helping me think more comprehensively about test coverage.
+1. **Search and Replace - Making Precise Edits**
+   - **Where**: I used `search_replace` to fix the issues in:
+     - `cypress/support/e2e.js` - removing the conflicting custom command
+     - `cypress.config.js` - adding proper video configuration
+   - **Why**: `search_replace` is perfect for this because:
+     - It requires exact context (3-5 lines before and after)
+     - It ensures I'm changing the right instance
+     - It's safer than manual editing for configuration files
+   - **How**: I provided enough context around each change to uniquely identify the exact lines to modify.
 
-2. **Cypress Best Practices**: I implemented the core Cypress tests, but consulted AI for best practices around configuration, timeout handling, and GitHub Actions integration to ensure I was following industry standards.
+2. **Automated Code Editing**
+   - **Where**: When fixing multiple issues across different files
+   - **Why**: To make precise changes without manual copy-pasting or risk of typos
+   - **How**: Used `edit_file` and `search_replace` for targeted modifications
 
-3. **CI/CD Pipeline Optimization**: I designed the basic GitHub Actions workflow structure, and used AI to validate the configuration and suggest improvements for reliability and performance.
+3. **Project State Management** 📊
+   - **Where**: Throughout the debugging and fixing process
+   - **Why**: To track what changes were made and what still needed fixing
+   - **How**: Used file reading to verify changes and understand the current state
 
-4. **Code Review and Refinement**: After implementing the tests, I used AI to review my code for potential improvements, edge cases, and to ensure I was following Cypress best practices.
+4. **Search & Find Operations** 🔍
+   - **Where**: When looking for specific code patterns or errors
+   - **Why**: To quickly locate issues without manually searching through files
+   - **How**: Used `grep_search` and `codebase_search` for semantic and exact pattern matching
 
-5. **Documentation Assistance**: I wrote the core documentation, but used AI to help structure it professionally and ensure all technical details were accurately captured.
-
-**Note**: The core application logic, test implementation, and overall project structure were developed independently. AI tools were used as a collaborative partner to enhance quality and ensure best practices, similar to how I would work with senior developers or QA leads in a professional environment.
+5. **Documentation Assistance**: Framed the core documentation, but used AI 
+to help structure it professionally and ensure all technical details were 
+accurately captured.
 
 ## Project Structure
 ```
