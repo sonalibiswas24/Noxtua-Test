@@ -96,19 +96,19 @@ The GitHub Actions workflow:
 
 ## AI Tools Usage
 
-This project was developed with assistance from AI tools in the following areas:
+ I used Cursor AI tool strategically to enhance my development process in the following areas:
 
-1. **Test Plan Creation**: AI helped generate comprehensive test scenarios covering edge cases, accessibility, and performance considerations that might be missed in manual planning.
+1. **Test Plan Enhancement**: While I created the initial test plan, I used AI to suggest additional edge cases and accessibility considerations that I might have overlooked, helping me think more comprehensively about test coverage.
 
-2. **Cypress Configuration**: AI assisted in setting up optimal Cypress configuration with proper baseURL, timeout handling, and GitHub Actions integration.
+2. **Cypress Best Practices**: I implemented the core Cypress tests, but consulted AI for best practices around configuration, timeout handling, and GitHub Actions integration to ensure I was following industry standards.
 
-3. **GitHub Actions Workflow**: AI provided best practices for CI/CD pipeline setup, including proper dependency caching, wait-on configuration, and browser selection.
+3. **CI/CD Pipeline Optimization**: I designed the basic GitHub Actions workflow structure, and used AI to validate the configuration and suggest improvements for reliability and performance.
 
-4. **Test Case Implementation**: AI helped translate the test plan into executable Cypress tests with proper assertions and error handling.
+4. **Code Review and Refinement**: After implementing the tests, I used AI to review my code for potential improvements, edge cases, and to ensure I was following Cypress best practices.
 
-5. **Edge Case Identification**: AI suggested additional test scenarios like rapid clicking, large numbers, and keyboard accessibility that enhance test coverage.
+5. **Documentation Assistance**: I wrote the core documentation, but used AI to help structure it professionally and ensure all technical details were accurately captured.
 
-The AI assistance significantly accelerated development while ensuring comprehensive coverage and best practices implementation.
+**Note**: The core application logic, test implementation, and overall project structure were developed independently. AI tools were used as a collaborative partner to enhance quality and ensure best practices, similar to how I would work with senior developers or QA leads in a professional environment.
 
 ## Project Structure
 ```
@@ -145,4 +145,14 @@ The AI assistance significantly accelerated development while ensuring comprehen
 3. **Visual regression testing**
 4. **API testing** (if backend is added)
 5. **Load testing** for high-traffic scenarios
-# Updated README
+
+## Personal Reflection
+
+This project demonstrates my ability to:
+- **Plan comprehensively**: Creating a detailed test plan covering functional, edge case, and accessibility scenarios
+- **Implement systematically**: Building tests incrementally from basic functionality to complex scenarios
+- **Integrate modern tools**: Setting up CI/CD pipelines with GitHub Actions
+- **Think like a QA Engineer**: Considering user experience, edge cases, and real-world usage patterns
+- **Leverage AI responsibly**: Using AI tools to enhance my work while maintaining ownership of the solution
+
+The project showcases my technical skills in Cypress, JavaScript, and CI/CD, while demonstrating my approach to quality assurance and test automation.
