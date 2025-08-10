@@ -9,11 +9,5 @@ module.exports = defineConfig({
     supportFile: 'cypress/support/e2e.js',
     specPattern: 'cypress/e2e/**/*.cy.{js,jsx,ts,tsx}',
     video: false,
-    // Add server configuration for CI
-    server: {
-      command: 'npm start',
-      port: 3000,
-      waitForServer: true,
-    },
   },
 })

@@ -24,5 +24,8 @@ jobs:
     - name: Install dependencies
       run: npm ci
       
+    - name: Start server
+      run: chmod +x start-server.sh && ./start-server.sh
+      
     - name: Run tests
       run: npx cypress run
