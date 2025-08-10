@@ -1,0 +1,14 @@
+{
+    "name": "mini-project",
+    "version": "1.0.0",
+    "scripts": {
+      "start": "http-server -p 3000",
+      "test": "cypress run",
+      "test:open": "cypress open"
+    },
+    "devDependencies": {
+      "http-server": "^14.1.1",
+      "cypress": "^13.6.4",
+      "wait-on": "^7.2.0"
+    }
+  }
