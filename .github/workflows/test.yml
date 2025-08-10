@@ -24,8 +24,11 @@ jobs:
       run: npm ci
       
     - name: Start application
-      run: npm start &
-      
+      run: |
+        npx http-server -p 3000 -a 0.0.0.0 &
+        sleep 3
+        curl -f http://localhost:3000 || exit 1
+        
     - name: Wait for application to start
       run: npx wait-on http://localhost:3000 --timeout 60000
       
