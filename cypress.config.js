@@ -2,12 +2,18 @@ const { defineConfig } = require('cypress')
 
 module.exports = defineConfig({
   e2e: {
-    baseUrl: 'http://localhost:3000', // This will be overridden in CI
+    baseUrl: 'http://localhost:3000',
     setupNodeEvents(on, config) {
       // implement node event listeners here
     },
     supportFile: 'cypress/support/e2e.js',
     specPattern: 'cypress/e2e/**/*.cy.{js,jsx,ts,tsx}',
-    video: false, // Disable video recording to speed up tests
+    video: false,
+    // Add server configuration for CI
+    server: {
+      command: 'npm start',
+      port: 3000,
+      waitForServer: true,
+    },
   },
 })
